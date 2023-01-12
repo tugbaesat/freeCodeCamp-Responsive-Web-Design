@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Survey Form</title>
+
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Introduction Part -->
+
+    <h1 id="title">Survey Form for Web Developers</h1>
+    <p id="description">Thank you for taking the time to help us.</p>
+    <!-- Form Part -->
+
+    <form id="survey-form">
+      <!-- 1st fieldset -->
+      <fieldset>
+        <h2>Personal Information</h2>
+        <label id="name-label" for="" class="question">
+          Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="" class="question">
+          Email
+          <input
+            type="email"
+            id="email"
+            placeholder="yourname@example.com"
+            required
+        /></label>
+        <label id="number-label" for="" class="question"
+          >Age (optional)
+          <input type="number" id="number" placeholder="Age" min="12" max="120"
+        /></label>
+        <label for="" class="question"
+          >Gender
+          <select name="" id="dropdown">
+            <option value="">Select One</option>
+            <option value="">Female</option>
+            <option value="">Male</option>
+            <option value="">Other</option>
+            <option value="">Not to prefer mention</option>
+          </select></label
+        >
+      </fieldset>
+      <!-- 2nd fieldset -->
+      <fieldset>
+        <h2>Professional Information</h2>
+        <label for="" class="question">
+          What is your title as web developer?
+        </label>
+        <label for=""
+          ><input type="radio" name="choice1" id="" class="inline" value="job-title"/> Frontend
+          Web Developer</label
+        >
+        <label for=""
+          ><input type="radio" name="choice1" id="" class="inline" value="job-title"/> Backend
+          Web Developer
+        </label>
+        <label for=""
+          ><input type="radio" name="choice1" id="" class="inline" value="job-title"/> Full Stack
+          Web Developer
+        </label>
+        <label for="" class="question">
+          What is your level as web developer currently?
+        </label>
+        <label for=""
+          ><input type="radio" name="choice2" id="" class="inline" value="level"/> Junior Web
+          Developer</label
+        >
+        <label for=""
+          ><input type="radio" name="choice2" id="" class="inline" value="level"/> Mid Web
+          Developer
+        </label>
+
+        <label for=""
+          ><input type="radio" name="choice2" id="" class="inline" value="level"/> Senior Web
+          Developer</label
+        >
+        <label for="" class="question">
+          Which programming languages are you using? (Check all that
+          apply)</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" />
+          HTML/CSS</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" />
+          JavaScript</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" />
+          TypeScript</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" /> Java</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" /> PHP</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" /> C#</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" />
+          Python</label
+        >
+        <label for=""
+          ><input type="checkbox" class="inline" value="language" /> Go</label
+        >
+      </fieldset>
+      <!-- 3rd fieldset -->
+      <fieldset>
+        <h2>Comment Section</h2>
+        <label for="" class="question">Any comments? </label>
+        <label for="">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <!-- Submit section-->
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
